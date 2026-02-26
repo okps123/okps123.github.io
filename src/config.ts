@@ -1,5 +1,5 @@
 export const SITE = {
-  website: "https://okps123.github.io/astropaper-blog/", // deployed domain
+  website: "https://okps123.github.io/", // deployed domain
   author: "Sat Naing",
   profile: "https://satnaing.dev/",
   desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
@@ -14,7 +14,7 @@ export const SITE = {
   editPost: {
     enabled: true,
     text: "Edit page",
-    url: "https://github.com/okps123/astropaper-blog/edit/main/",
+    url: "https://github.com/okps123/okps123.github.io/edit/main/",
   },
   dynamicOgImage: true,
   dir: "ltr", // "rtl" | "auto"

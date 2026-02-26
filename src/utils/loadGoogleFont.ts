@@ -18,19 +18,22 @@ async function loadGoogleFonts(_text?: string): Promise<
     readFile(boldPath),
   ]);
 
+  const toArrayBuffer = (buf: Buffer): ArrayBuffer => {
+    const view = new Uint8Array(buf.byteLength);
+    view.set(buf);
+    return view.buffer;
+  };
+
   return [
     {
       name: "Noto Sans KR",
-      data: regular.buffer.slice(
-        regular.byteOffset,
-        regular.byteOffset + regular.byteLength
-      ),
+      data: toArrayBuffer(regular),
       weight: 400,
       style: "normal",
     },
     {
       name: "Noto Sans KR",
-      data: bold.buffer.slice(bold.byteOffset, bold.byteOffset + bold.byteLength),
+      data: toArrayBuffer(bold),
       weight: 700,
       style: "normal",
     },

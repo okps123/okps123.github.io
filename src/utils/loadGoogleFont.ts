@@ -17,11 +17,11 @@ const toArrayBuffer = (buf: Buffer): ArrayBuffer => {
 async function loadGoogleFonts(_text: string): Promise<SatoriFont[]> {
   const regularPath = resolve(
     process.cwd(),
-    "src/assets/fonts/NanumGothic-Regular.ttf"
+    "src/assets/fonts/NotoSansKR-Regular.otf"
   );
   const boldPath = resolve(
     process.cwd(),
-    "src/assets/fonts/NanumGothic-Bold.ttf"
+    "src/assets/fonts/NotoSansKR-Bold.otf"
   );
 
   const [regular, bold] = await Promise.all([
@@ -31,13 +31,13 @@ async function loadGoogleFonts(_text: string): Promise<SatoriFont[]> {
 
   return [
     {
-      name: "Nanum Gothic",
+      name: "Noto Sans KR",
       data: toArrayBuffer(regular),
       weight: 400,
       style: "normal",
     },
     {
-      name: "Nanum Gothic",
+      name: "Noto Sans KR",
       data: toArrayBuffer(bold),
       weight: 700,
       style: "normal",

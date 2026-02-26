@@ -1,7 +1,7 @@
 export const SITE = {
   website: "https://okps123.github.io/", // deployed domain
-  author: "Sat Naing",
-  profile: "https://satnaing.dev/",
+  author: "Jake",
+  profile: "https://github.com/okps123",
   desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
   title: "AstroPaper",
   ogImage: "astropaper-og.jpg",

@@ -4,7 +4,7 @@ export const SITE = {
   profile: "https://github.com/okps123",
   desc: "No cap. Real notes on engineering, productivity, and shipping.",
   title: "No Cap, Jake",
-  ogImage: "astropaper-og.jpg",
+  ogImage: "og-default-a.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
   postPerPage: 4,
